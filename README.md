@@ -3,7 +3,7 @@
 ## Instructions
 ```
  * CRUD api
- * jwt will be saved on cookies.
+ * jwt saved as a cookie.
 ```
 
 ## Built With
