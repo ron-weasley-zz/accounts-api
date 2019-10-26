@@ -57,6 +57,7 @@ const useraccountSchema = new mongoose.Schema({
 
 useraccountSchema.pre('save', async function (next) {
     this.password = await crypto.createHmac('sha512', process.env.PASSWORD_KEY).update(this.password).digest('hex');
+    this.passwordConfirm = null;
     next();
 });
 
